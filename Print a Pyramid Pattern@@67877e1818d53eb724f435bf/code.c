@@ -1,15 +1,20 @@
 #include <stdio.h>
-int main(){
-    int i,j,rows, space;
+
+int main() {
+    int i, j, rows, space;
     scanf("%d", &rows);
-    for(int i=1; i<=rows; i++){
-        for(space=1;space<=(5-i); space++){
+    
+    for (i = 1; i <= rows; i++) {
+        // Print spaces (fix: ensure no leading space in the first row)
+        for (space = 1; space <= rows - i; space++) {
             printf(" ");
         }
-        for(int j=1; j<=(2*i-1);j++){
+        // Print stars
+        for (j = 1; j <= (2 * i - 1); j++) {
             printf("*");
         }
         printf("\n");
     }
+    
     return 0;
 }
