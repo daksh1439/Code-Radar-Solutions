@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fibonacciSeries(int n) {
+void fibonacciSeries(int n) {
     if (n == 1 || n == 2) {
         return n - 1;
     }
@@ -14,7 +14,8 @@ int main() {
     if (n <= 0) {
         printf("Invalid input\n");
         return 0;
-    } else {
+    } 
+    else {
         printf("%d\n", fibonacciSeries(n));
     }
     
