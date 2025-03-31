@@ -13,7 +13,7 @@ int main(){
         return 0;
     }
     else{
-        fibonacciSeries(n);
+        printf("%d",fibonacciSeries(n));
     }
     return 0;
 
